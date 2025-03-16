@@ -3,39 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>按分类显示图片</title>
+    <title>图片分类展示</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>图片分类展示</h1>
-        <div class="buttons">
-            <button class="btn active" data-category="all">全部</button>
-            <button class="btn" data-category="nature">自然</button>
-            <button class="btn" data-category="animals">动物</button>
-            <button class="btn" data-category="city">城市</button>
-        </div>
+        <nav>
+            <button class="category-btn active" data-category="all">全部</button>
+            <button class="category-btn" data-category="nature">自然</button>
+            <button class="category-btn" data-category="animals">动物</button>
+            <button class="category-btn" data-category="city">城市</button>
+        </nav>
+    </header>
+
+    <main>
         <div class="gallery">
-            <div class="image" data-category="nature">
+            <div class="image-item nature">
                 <img src="nature1.jpg" alt="自然图片1">
             </div>
-            <div class="image" data-category="nature">
+            <div class="image-item nature">
                 <img src="nature2.jpg" alt="自然图片2">
             </div>
-            <div class="image" data-category="animals">
+            <div class="image-item animals">
                 <img src="animal1.jpg" alt="动物图片1">
             </div>
-            <div class="image" data-category="animals">
+            <div class="image-item animals">
                 <img src="animal2.jpg" alt="动物图片2">
             </div>
-            <div class="image" data-category="city">
-                <img src="city1.png" alt="城市图片1">
+            <div class="image-item city">
+                <img src="city1.jpg" alt="城市图片1">
             </div>
-            <div class="image" data-category="city">
+            <div class="image-item city">
                 <img src="city2.jpg" alt="城市图片2">
             </div>
         </div>
-    </div>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
